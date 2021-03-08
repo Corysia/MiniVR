@@ -31,4 +31,9 @@ private:
     void MoveForward(const float Throttle);
     void MoveRight(const float Throttle);
     
+private:
+    UPROPERTY()
+    class UCameraComponent *Camera;
+    UPROPERTY()
+    class USceneComponent *VRRoot;
 };
